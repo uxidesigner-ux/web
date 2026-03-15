@@ -1,10 +1,7 @@
-const path = require('path')
-
-module.exports = {
-    sassOptions: {
-        includePaths: [path.join(__dirname, 'styles')],
-    },
-    trailingSlash: true,
-    optimizeFonts: false,
-    distDir: 'build',
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  basePath: '/web',
 }
+
+module.exports = nextConfig
